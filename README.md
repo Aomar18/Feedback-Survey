@@ -1,13 +1,38 @@
+## Checklist 
+
+- [ ] Using POSTGRESQL create a database 'prime_feedback' and table 'feedback'.
+- [ ] Run npm install , npm run server , and npm run client - the latter two in seperate tabs.
+- [ ] Setup Index.js and App.js 
+- [ ] Create client side routing 
+- [ ] Create four seperate views with four components (empty)
+- [ ] Create buttons to navigate between pages 
+- [ ] Form to collect data take in user input
+- [ ] Create Redux store and reducers 
+- [ ] Using a POST route send it via axios 
+- [ ] Make AXIOS get requests to pull data from db 
+- [ ] Append the data pulled back to the DOM 
+- [ ] Styling the user input forms
+- [ ] Style the admin pages
+- [ ] Update READme upon completion of base functionality.
+
+## StretchGoals
+
+- [ ] 
+- [ ]
+
+
+
 # Redux Feedback Loop
 
 > **PLEASE COMMENT YOUR CODE.** Do not clone this repository. Instead, download the zip, extract the contents, `git init`, `git add .`, `git commit -m "initial commit - base project"` and add your remote. Please do this before you leave for the day.
-
-"And as always, what do I end every day with?" - Luke
 
 
  For this assignment, you will be creating a feedback form modeled after Prime's system. Feedback will be collected over 4 views, and when all steps are complete, your app will save the feedback in the database. In a separate view, a user will be able to see all the collected feedback. 
 
 ### SETUP
+
+
+
 
 Create your database and tables using the provided `data.sql` file. Start the server.
 
