@@ -1,7 +1,14 @@
 ## Checklist 
 
-- [ ] Using POSTGRESQL create a database 'prime_feedback' and table 'feedback'.
-- [ ] Run npm install , npm run server , and npm run client - the latter two in seperate tabs.
+- [x] Using POSTGRESQL create a database 'prime_feedback' and table 'feedback'.
+- [x] Run 
+        ```
+        npm install, 
+        npm install react-router-dom
+        npm install redux react-redux
+        npm install redux-logger,
+        ```
+- [x] npm run server , and npm run client - both in independent terminal tabs.
 - [ ] Setup Index.js and App.js 
 - [ ] Create client side routing 
 - [ ] Create four seperate views with four components (empty)
