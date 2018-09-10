@@ -26,7 +26,7 @@ handleSubmit = (event) => {
 event.preventDefault();
 const action = { type: 'ADD_FEELING' , payload: this.state}
 this.props.dispatch(action);
-this.props.history.push('feeling');
+this.props.history.push('understanding');
 this.emptyInputs();
 }
 
@@ -45,28 +45,33 @@ render() {
         <h1> How are you feeling ? </h1>
 
         <form className="FeelingSurvey">
-
+        <label>1</label>
         <input className='radio' onChange={this.handleChange}
-                checked="{this.state.feeling === 1}"
+                checked="{this.state.feeling === '1'}"
                 type="radio" value="1"/>
-
+<br/>
+<label>2</label>
         <input className='radio' onChange={this.handleChange}
-                checked="{this.state.feeling === 2}"
+                checked="{this.state.feeling === '2'}"
                 type="radio" value="2"/>
-
+<br/>
+<label>3</label>
         <input className='radio' onChange={this.handleChange}
-                checked="{this.state.feeling === 3}"
+                checked="{this.state.feeling === '3'}"
                 type="radio" value="3"/>
-
+<br/>
+<label>4</label>
         <input className='radio' onChange={this.handleChange}
-                checked="{this.state.feeling === 4}"
+                checked="{this.state.feeling === '4'}"
                 type="radio" value="4"/>
-
+<br/>
+<label>5</label>
         <input className='radio' onChange={this.handleChange}
-                checked="{this.state.feeling === 5}"
+                checked="{this.state.feeling === '5'}"
                 type="radio" value="5"/>
 
-        <input type="submit" onClick={this.handleSubmit}>NEXT</input>
+<br/>
+        <button type="submit" onClick={this.handleSubmit}>NEXT</button>
 
 
 

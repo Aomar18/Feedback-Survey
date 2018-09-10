@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import connect from 'react-redux';
+import {connect} from 'react-redux';
 
 
 const emptyFeedback = {
@@ -42,23 +42,23 @@ class Support extends Component {
             <form className="supportSurvey">
 
                 <input className='radio' onChange={this.handleChange}
-                    checked="{this.state.support === 1}"
+                    checked="{this.state.support === '1'}"
                     type="radio" value="1" />
 
                 <input className='radio' onChange={this.handleChange}
-                    checked="{this.state.support === 2}"
+                    checked="{this.state.support === '2'}"
                     type="radio" value="2" />
 
                 <input className='radio' onChange={this.handleChange}
-                    checked="{this.state.support === 3}"
+                    checked="{this.state.support === '3'}"
                     type="radio" value="3" />
 
                 <input className='radio' onChange={this.handleChange}
-                    checked="{this.state.support === 4}"
+                    checked="{this.state.support === '4'}"
                     type="radio" value="4" />
 
                 <input className='radio' onChange={this.handleChange}
-                    checked="{this.state.support === 5}"
+                    checked="{this.state.support === '5'}"
                     type="radio" value="5" />
 
                 <input type="submit" onClick={this.handleSubmit}>NEXT</input>

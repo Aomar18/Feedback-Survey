@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-
-
-const emptyfeedback = {
-    comments:'',
-}
+import axios from 'axios';
+import { connect } from 'react-redux';
 
 
 class Comments extends Component {
-constructor(props){
+
+    constructor(props){
     super(props);
+
 }
+
+
 
 
 render(){
