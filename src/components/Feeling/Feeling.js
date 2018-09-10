@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import {connect} from 'react-redux';
 
-const feedback = {
+const emptyfeedback = {
     feeling: ''
 }
 
@@ -21,6 +22,19 @@ handleChange = (event) => {
     })
 }
 
+handleSubmit = (event) => {
+    event.preventDefault();
+
+const action = { type: 'ADD_FEELING' , payload: this.state}
+this.props.dispatch(action);
+this.props.history.push('feeling');
+}
+
+emptyInputs(){
+    this.setState(emptyFeedback);
+}
+
+
 
 
 
@@ -28,8 +42,33 @@ handleChange = (event) => {
 render() {
     return(
         <div>
+        <form className="FeelingSurvey">
+        <input className='radio' onChange={this.handleChange}
+                checked="{this.state.feeling === 1}"
+                type="radio" value="1"/>
+        <input className='radio' onChange={this.handleChange}
+                checked="{this.state.feeling === 2}"
+                type="radio" value="2"/>
+        <input className='radio' onChange={this.handleChange}
+                checked="{this.state.feeling === 3}"
+                type="radio" value="3"/>
+        <input className='radio' onChange={this.handleChange}
+                checked="{this.state.feeling === 4}"
+                type="radio" value="4"/>
+        <input className='radio' onChange={this.handleChange}
+                checked="{this.state.feeling === 5}"
+                type="radio" value="5"/>
+        <input type="subumit" onClick={this.handleSubmit}>NEXT</input>
+
+
+
+        </form> 
         </div>
     )
 }
 }
-export default Feeling;
+const mapReduxStateToProps = (reduxState) => ({
+    reduxState
+}),
+
+export default connect(mapReduxStateToProps)(Feeling);
