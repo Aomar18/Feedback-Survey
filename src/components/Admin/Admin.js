@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
-const emptyInfo = [];
 
+
+const emptyInfo = [];
 
 class Admin extends Component {
     constructor(props) {
@@ -60,10 +61,10 @@ class Admin extends Component {
                     </thead>
                     <tbody>
                         <tr>
-                            <td>{this.props.result.feeling}</td>
-                            <td>{this.props.result.understanding} </td>
-                            <td>{this.props.result.support}</td>
-                            <td>{this.props.result.comments}</td>
+                            <td>{this.props.updated.feeling}</td>
+                            <td>{this.props.updated.understanding} </td>
+                            <td>{this.props.updated.support}</td>
+                            <td>{this.props.updated.comments}</td>
                             <td><button onClick={this.handleDelete}>Delete</button></td>
                         </tr>
 
