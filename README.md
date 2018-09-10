@@ -28,10 +28,6 @@ npm run client
 - [ ] Style the admin pages
 - [x] Update READme upon completion of base functionality.
 
-## StretchGoals
-
-- [ ] 
-- [ ]
 
 
 
