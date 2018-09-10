@@ -44,17 +44,17 @@ class Support extends Component {
                     <br />
                     <label>1</label>
                     <input className='radio' onChange={this.handleChange}
-                        checked="{this.state.support === '1'}"
+                       
                         type="radio" value="1" />
                     <br />
                     <label>2</label>
                     <input className='radio' onChange={this.handleChange}
-                        checked="{this.state.support === '2'}"
+                      
                         type="radio" value="2" />
                     <br />
                     <label>3</label>
                     <input className='radio' onChange={this.handleChange}
-                        checked="{this.state.support === '3'}"
+                       
                         type="radio" value="3" />
                     <br />
                     <label>4</label>
@@ -64,7 +64,7 @@ class Support extends Component {
                     <br />
                     <label>5</label>
                     <input className='radio' onChange={this.handleChange}
-                        checked="{this.state.support === '5'}"
+                        
                         type="radio" value="5" />
                     <br />
                     <button type="submit" onClick={this.handleSubmit}>NEXT</button>

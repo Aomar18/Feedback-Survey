@@ -11,7 +11,6 @@ router.post('/', (req, res) => {
     VALUES ($1, $2, $3, $4);`;
     pool.query(query, [userInput[0], userInput[1], userInput[2], userInput[3]]).then((results) => {
         console.log('Success in making POST');
-        
         res.sendStatus(201);
     }).catch((error)=> {
         console.log('Error in making POST', error);

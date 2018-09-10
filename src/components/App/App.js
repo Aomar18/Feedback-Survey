@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Admin from '../Admin/Admin.js'
+import Admin from '../Admin/Admin.js';
 import Understanding from '../Understanding/Understanding.js';
 import Feeling from '../Feeling/Feeling.js';
 import Support from '../Support/Support.js';

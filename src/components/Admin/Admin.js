@@ -1,32 +1,29 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { connect } from 'react-redux';
-
-
-const emptyInfo = [];
+import AdminRow from './AdminRow/AdminRow.js';
 
 class Admin extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
-            feedback: emptyInfo
+            feedback: [],
 
         }
     }
 
     componentDidMount() {
-        this.getResults();
+        this.getFeedback();
     }
 
-    getResults = () => {
+    getFeedback = () => {
         axios({
             method: 'GET',
             url: '/feedback',
         }).then((response) => {
             console.log(response.data);
             this.setState({
-                result: response.data.rows
+                feedback: response.data.rows
             })
         }).catch((error) => {
             console.log('error in get', error);
@@ -37,7 +34,7 @@ class Admin extends Component {
     handleDelete = () => {
         axios({
             method: 'DELETE',
-            url: `/feedback/${this.props.result.id}`,
+            url: `/feedback/${this.props.feedback.id}`,
         }).then((response) => {
             this.props.getResults();
         }).catch((error) => {
@@ -60,14 +57,13 @@ class Admin extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>{this.props.updated.feeling}</td>
-                            <td>{this.props.updated.understanding} </td>
-                            <td>{this.props.updated.support}</td>
-                            <td>{this.props.updated.comments}</td>
-                            <td><button onClick={this.handleDelete}>Delete</button></td>
-                        </tr>
+                        {this.state.feedback.map((feedback, i) => {
+                            return (
+                                
+                                <AdminRow key={i} feedback={feedback} />
 
+                            );
+                        })}
                     </tbody>
                 </table>
 

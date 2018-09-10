@@ -15,7 +15,7 @@ class Comments extends Component {
 
         this.state = {
             ...this.props.reduxState.feedbackReducer,
-            comments: 'comment'
+            comments: ''
         }
 
     }
@@ -30,7 +30,7 @@ class Comments extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault();
-        const action = { type: 'ADD_COMMENT', payload: this.state }
+        const action = { type: 'ADD_COMMENTS', payload: this.state }
         this.props.dispatch(action);
 
 
@@ -42,7 +42,7 @@ class Comments extends Component {
             console.log('axios - post', response);
             const action = { type: 'CLEAR_ALL' }
             this.props.dispatch(action);
-            this.props.dispatch.push('thanks');
+            this.props.history.push('thanks');
             this.emptyInputs();
         }).catch((error) => {
             console.log('ERROR in AXIOS POST', error);
