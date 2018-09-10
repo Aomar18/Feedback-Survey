@@ -56,16 +56,17 @@ class Comments extends Component {
 
     render() {
         return (
-     <div>
+            <div>
+                <h1>Any comments you want to leave? </h1>
+                <form>
+                    <textarea rows="4" cols="50" onChange={this.handleChange} placeholder="Enter a comment about the survey here" />
+                    <br/>
+                    <button onClick={this.handleSubmit}>NEXT</button>
+                </form>
 
-     <form>
-         <input onchange={this.handleChange}/>
-          <button onClick={this.handleSubmit}>NEXT</button>
-     </form>
 
 
-
-     </div>
+            </div>
         )
     }
 

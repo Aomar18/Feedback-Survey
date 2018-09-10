@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 
 const emptyFeedback = {
@@ -28,45 +28,51 @@ class Support extends Component {
         this.emptyInputs();
     }
 
-    emptyInputs(){
+    emptyInputs() {
         this.setState(emptyFeedback);
     }
 
 
-    render(){
+    render() {
 
 
         return (
-        <div className="supportView">
+            <div className="supportView">
+                <br />
+                <h1>How well are you being supported? </h1>
+                <form className="supportSurvey">
+                    <br />
+                    <label>1</label>
+                    <input className='radio' onChange={this.handleChange}
+                        checked="{this.state.support === '1'}"
+                        type="radio" value="1" />
+                    <br />
+                    <label>2</label>
+                    <input className='radio' onChange={this.handleChange}
+                        checked="{this.state.support === '2'}"
+                        type="radio" value="2" />
+                    <br />
+                    <label>3</label>
+                    <input className='radio' onChange={this.handleChange}
+                        checked="{this.state.support === '3'}"
+                        type="radio" value="3" />
+                    <br />
+                    <label>4</label>
+                    <input className='radio' onChange={this.handleChange}
+                        checked="{this.state.support === '4'}"
+                        type="radio" value="4" />
+                    <br />
+                    <label>5</label>
+                    <input className='radio' onChange={this.handleChange}
+                        checked="{this.state.support === '5'}"
+                        type="radio" value="5" />
+                    <br />
+                    <button type="submit" onClick={this.handleSubmit}>NEXT</button>
 
-            <form className="supportSurvey">
-
-                <input className='radio' onChange={this.handleChange}
-                    checked="{this.state.support === '1'}"
-                    type="radio" value="1" />
-
-                <input className='radio' onChange={this.handleChange}
-                    checked="{this.state.support === '2'}"
-                    type="radio" value="2" />
-
-                <input className='radio' onChange={this.handleChange}
-                    checked="{this.state.support === '3'}"
-                    type="radio" value="3" />
-
-                <input className='radio' onChange={this.handleChange}
-                    checked="{this.state.support === '4'}"
-                    type="radio" value="4" />
-
-                <input className='radio' onChange={this.handleChange}
-                    checked="{this.state.support === '5'}"
-                    type="radio" value="5" />
-
-                <input type="submit" onClick={this.handleSubmit}>NEXT</input>
 
 
-
-            </form>
-        </div>
+                </form>
+            </div>
 
         )
     }

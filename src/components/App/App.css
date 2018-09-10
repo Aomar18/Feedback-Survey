@@ -17,3 +17,12 @@
   font-size: large;
 }
 
+Commentbox {
+  height: 40px;
+  width: 40px;
+}
+
+button {
+  background-color: lightblue;
+  color: white;
+}

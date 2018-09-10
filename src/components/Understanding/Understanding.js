@@ -39,7 +39,8 @@ class Understanding extends Component {
     render() {
         return (
             <div className="understandingView">
-
+            <br/>
+            <h1>How well are you understanding the content?</h1>
                 <form className="understandingSurvey">
 
                     <label>1</label>
@@ -67,7 +68,7 @@ class Understanding extends Component {
                         checked="{this.state.understanding === '5'}"
                         type="radio" value="5" />
                     <br />
-                    <input type="submit" onClick={this.handleSubmit}>NEXT</input>
+                    <button type="submit" onClick={this.handleSubmit}>NEXT</button>
 
 
 

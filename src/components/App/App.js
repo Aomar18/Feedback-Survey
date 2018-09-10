@@ -18,11 +18,11 @@ class App extends Component {
           <div>
           <Header />
           <Route exact path="/" component={Feeling} />
-          <Route path="understanding" component={Understanding} />
-          <Route path="support" component={Support} />
-          <Route path="comments" component={Comments} />
-          <Route path="Thanks" component={Thanks} />
-          <Route path="admin" component={Admin} />
+          <Route path="/understanding" component={Understanding} />
+          <Route path="/support" component={Support} />
+          <Route path="/comments" component={Comments} />
+          <Route path="/thanks" component={Thanks} />
+          <Route path="/admin" component={Admin} />
           </div>
         </Router>
       </div>

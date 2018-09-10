@@ -80,8 +80,6 @@ render() {
     )
 }
 }
-const mapReduxStateToProps = (reduxState) => ({
-    reduxState
-})
 
-export default connect(mapReduxStateToProps)(Feeling);
+
+export default connect()(Feeling);
