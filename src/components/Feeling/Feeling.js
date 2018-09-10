@@ -11,7 +11,7 @@ class Feeling extends Component {
 constructor(){
 super();
 
-this.state = feedback;
+this.state = emptyfeedback;
 
 }
 
@@ -77,6 +77,6 @@ render() {
 }
 const mapReduxStateToProps = (reduxState) => ({
     reduxState
-}),
+})
 
 export default connect(mapReduxStateToProps)(Feeling);

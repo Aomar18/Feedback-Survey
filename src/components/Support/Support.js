@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import connect from 'react-redux';
 
 
 const emptyfeedback = {
     support: ''
 }
+
 
 class Support extends Component {
     constructor() {
@@ -22,17 +24,20 @@ class Support extends Component {
         event.preventDefault();
         const action = { type: 'ADD_SUPPORT', payload: this.state }
         this.props.dispatch(action);
-        this.props.history.push('support');
+        this.props.history.push('comments');
         this.emptyInputs();
     }
 
-    emptyInputs()
+    emptyInputs(){
+        this.setState(emptyFeedback);
+    }
 
 
+    render(){
 
 
-    render() {
-        return (<div className="supportView">
+        return (
+        <div className="supportView">
 
             <form className="supportSurvey">
 
@@ -62,7 +67,7 @@ class Support extends Component {
 
             </form>
         </div>
-        
+
         )
     }
 
@@ -71,4 +76,5 @@ class Support extends Component {
 const mapReduxStateToProps = (reduxState) => ({
     reduxState
 })
-export default connect(mapReduxStateToProps)(support);
+
+export default connect(mapReduxStateToProps)(Support);
