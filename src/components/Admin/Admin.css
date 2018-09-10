@@ -1,6 +1,7 @@
 
 html, body{
     width: 100%;
+    background-color: beige;
 }
 table:hover{
     margin: 0 auto;
@@ -24,11 +25,6 @@ td:hover{
     color: gold;
 }
 
-button:hover{
-    background-color:red;
-    height: 40px;
-    width: 40px;
-}
 
 th{
     font-family: cursive;

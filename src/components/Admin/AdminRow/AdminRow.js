@@ -1,7 +1,23 @@
 import React, { Component } from 'react';
-
+import axios from 'axios';
 
 class AdminRow extends Component {
+
+
+    handleDelete = () => {
+        axios({
+            method: 'DELETE',
+            url: `/feedback/${this.props.feedback.id}`,
+        }).then((response) => {
+            this.props.getResults();
+            alert('SURVEY ITEM DELETED!')
+        }).catch((error) => {
+            console.log('error making Delete request', error);
+        });
+
+    }
+
+
     render() {
         return (
 

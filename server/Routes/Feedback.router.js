@@ -31,10 +31,9 @@ router.get('/', (req, res) => {
 })
 
 router.delete('/:id', (req,res) => {
-    console.log('Deleting in progress', );
-    let dlID = req.params.id;
+    let id = req.params.id;
     const query = 'DELETE FROM "feedback" WHERE "id" = $1;';
-    pool.query(query, [dlID]).then((results) => {
+    pool.query(query, [id]).then((results) => {
         res.sendStatus(201);
     }).catch((error) => {
         res.sendStatus(500);

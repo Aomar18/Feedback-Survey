@@ -38,21 +38,11 @@ class Admin extends Component {
     }
 
 
-    handleDelete = () => {
-        axios({
-            method: 'DELETE',
-            url: `/feedback/${this.props.feedback.id}`,
-        }).then((response) => {
-            this.props.getResults();
-        }).catch((error) => {
-            console.log('error making Delete request', error);
-        });
-
-    }
 
     render() {
         return (
             <div>
+                <h2>Administrator's Data Table</h2>
                 <table align="center" className="table">
                     <thead>
                         <tr>
