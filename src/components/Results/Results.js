@@ -8,18 +8,12 @@ class Results extends Component {
 
 
 
-
-
-
-
-
-}
-
-render{
+render() {
     return(
         <div>
         </div>
     )
+}
 }
 
 export default Results;

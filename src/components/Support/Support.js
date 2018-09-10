@@ -13,13 +13,14 @@ class Support extends Component {
 
 
 
-}
 
-render{
+
+render() {
     return(
         <div>
         </div>
     )
+}
 }
 
 export default Support;

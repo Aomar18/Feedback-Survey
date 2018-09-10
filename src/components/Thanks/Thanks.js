@@ -13,13 +13,14 @@ class Thanks extends Component {
 
 
 
-}
 
-render{
+
+render() {
     return(
         <div>
         </div>
     )
 }
 
+}
 export default Thanks;

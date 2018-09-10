@@ -14,10 +14,10 @@ npm install redux-logger
 npm run server 
 npm run client
 ```
-- [ ] Setup Provider in Index.js 
-- [ ] Set up initial skeleton of app
-- [ ] Create four seperate views with four components - not including final view when feedback is complete. (empty)
-- [ ] Create client side routing 
+- [x] Setup Provider in Index.js 
+- [x] Set up initial skeleton of app
+- [x] Create four seperate views with four components - Addiontally inclue final view when feedback is complete. (empty)
+- [x] Create client side routing 
 - [ ] Create buttons to navigate between pages 
 - [ ] Form to collect data take in user input
 - [ ] Create Redux store and reducers 
