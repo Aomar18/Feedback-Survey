@@ -27,3 +27,11 @@ button {
   color: white;
 }
 
+input{
+  background-color: orange;
+   
+}
+
+button:hover{
+  background-color: lightblue;
+}

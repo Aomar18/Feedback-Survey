@@ -2,12 +2,13 @@
 html, body{
     width: 100%;
 }
-table{
+table:hover{
     margin: 0 auto;
     height: 60%;
     width: 100%;
     font-size: 25px;
-    
+    color:light blue 
+
 }
 tr:nth-child(even){
     background: #CCC;
@@ -19,6 +20,42 @@ th{
     background: grey;
     color:white;
 }
-tr:hover{
+td:hover{
+    color: gold;
+}
+
+button:hover{
+    background-color:red;
+    height: 40px;
+    width: 40px;
+}
+
+th{
+    font-family: cursive;
+    padding: 2%;
+}
+
+tr:hover:nth-child(even){
+    background: #FFF;
+}
+tr:hover:nth-child(odd){
+    background:#CCC;
+}
+
+th:hover{
+    color: forestgreen;
+}
+
+.home {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}
+.home:hover {
+    height:100px;
+    width: 100px;
+    font-size: 30px;
     background-color:lightblue;
+    color:black;
+
 }

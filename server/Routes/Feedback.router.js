@@ -32,12 +32,11 @@ router.get('/', (req, res) => {
 
 router.delete('/:id', (req,res) => {
     console.log('Deleting in progress', );
-    let deleteThis = req.params.id;
+    let dlID = req.params.id;
     const query = 'DELETE FROM "feedback" WHERE "id" = $1;';
-    pool.query(query, [deleteThis]).then((results) => {
+    pool.query(query, [dlID]).then((results) => {
         res.sendStatus(201);
     }).catch((error) => {
-        console.log(`Oh No You can't delete yet`, error);
         res.sendStatus(500);
     });
 });

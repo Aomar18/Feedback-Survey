@@ -6,11 +6,21 @@ class AdminRow extends Component {
         return (
 
             <tr>
-                <td>{this.props.feedback.feeling}</td>
-                <td>{this.props.feedback.understanding} </td>
-                <td>{this.props.feedback.support}</td>
-                <td>{this.props.feedback.comments}</td>
-                <td><button onClick={this.handleDelete}>Delete</button></td>
+                <td>
+                    {this.props.feedback.feeling}
+                </td>
+                <td>
+                    {this.props.feedback.understanding}
+                </td>
+                <td>
+                    {this.props.feedback.support}
+                </td>
+                <td>
+                    {this.props.feedback.comments}
+                </td>
+                <td>
+                    <button onClick={this.handleDelete}>Delete</button>
+                </td>
             </tr>
 
         );

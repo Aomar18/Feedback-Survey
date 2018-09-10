@@ -32,6 +32,11 @@ class Admin extends Component {
         })
     }
 
+    handleSubmit = (event) => {
+        this.props.history.push('/')
+    
+    }
+
 
     handleDelete = () => {
         axios({
@@ -68,6 +73,10 @@ class Admin extends Component {
                         })}
                     </tbody>
                 </table>
+                <br/>
+                <br/>
+                <p>Return to Survey:</p>
+                <button className="home" onClick={this.handleSubmit}>Home</button>
 
             </div>
         )
