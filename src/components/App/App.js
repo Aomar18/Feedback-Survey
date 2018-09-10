@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './App.css';
+import { HashRouter as Router, Route } from 'react-router-dom';
+import Support from 
+import
+import
+import
+
 
 class App extends Component {
+  
   render() {
     return (
       <div className="App">
