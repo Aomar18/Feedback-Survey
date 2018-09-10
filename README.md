@@ -19,14 +19,14 @@ npm run client
 - [x] Create four seperate views with four components - Addiontally inclue final view when feedback is complete. (empty)
 - [x] Create client side routing 
 - [ ] Create buttons to navigate between pages 
-- [ ] Form to collect data take in user input
-- [ ] Create Redux store and reducers 
-- [ ] Using a POST route send it via axios 
-- [ ] Make AXIOS get requests to pull data from db 
-- [ ] Append the data pulled back to the DOM 
+- [x] Form to collect data take in user input
+- [x] Create Redux store and reducers 
+- [x] Using a POST route send it via axios 
+- [x] Make AXIOS get requests to pull data from db 
+- [x] Append the data pulled back to the DOM 
 - [ ] Styling the user input forms
 - [ ] Style the admin pages
-- [ ] Update READme upon completion of base functionality.
+- [x] Update READme upon completion of base functionality.
 
 ## StretchGoals
 
