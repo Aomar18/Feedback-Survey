@@ -40,6 +40,7 @@ class Feeling extends Component {
 
 
     render() {
+        console.log(this.state);
         return (
             <div>
                 <h1> How are you feeling ? </h1>

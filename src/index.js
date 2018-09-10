@@ -8,7 +8,7 @@ import logger from 'redux-logger';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 
 
-const defaultContent = {
+const feedback = {
     feeling: '',
     understanding: '',
     support: '',
@@ -16,22 +16,21 @@ const defaultContent = {
 }
 //REDUCERS HERE
 
-const feedbackReducer = (state = defaultContent, action) => {
-    const updatedContent = action.payload;
+const feedbackReducer = (state = feedback, action) => {
     if (action.type === 'ADD_FEELING') {
-        return { ...state, feeling: updatedContent.feeling }
+        return { ...state, feeling: action.payload.feeling }
     }
     else if (action.type === 'ADD_UNDERSTANDING') {
-        return { ...state, understanding: updatedContent.understanding }
+        return { ...state, understanding: action.payload.understanding }
     }
     else if (action.type === 'ADD_SUPPORT') {
-        return { ...state, support: updatedContent.support }
+        return { ...state, support: action.payload.support }
     }
     else if (action.type === 'ADD_COMMENTS') {
-        return { ...state, comments: updatedContent.comments }
+        return { ...state, comments: action.payload.comments }
     }
     else if (action.type === 'CLEAR_ALL'){
-        return defaultContent;
+        return feedback;
     }
     return state;
 }

@@ -59,7 +59,7 @@ class Support extends Component {
                     <br />
                     <label>4</label>
                     <input className='radio' onChange={this.handleChange}
-                        checked="{this.state.support === '4'}"
+                       
                         type="radio" value="4" />
                     <br />
                     <label>5</label>

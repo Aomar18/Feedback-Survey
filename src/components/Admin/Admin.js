@@ -3,6 +3,8 @@ import axios from 'axios';
 import { connect } from 'react-redux';
 import AdminRow from './AdminRow/AdminRow.js';
 
+
+
 class Admin extends Component {
     constructor(props) {
         super(props);
@@ -23,7 +25,7 @@ class Admin extends Component {
         }).then((response) => {
             console.log(response.data);
             this.setState({
-                feedback: response.data.rows
+                feedback: response.data
             })
         }).catch((error) => {
             console.log('error in get', error);

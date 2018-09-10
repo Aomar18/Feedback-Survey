@@ -1,18 +1,18 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 
 class AdminRow extends Component {
-    render(){
-        return(
-            <div className="AdminRow">
+    render() {
+        return (
+
             <tr>
-            <td>{this.state.feedback.feeling}</td>
-            <td>{this.state.feedback.understanding} </td>
-            <td>{this.state.feedback.support}</td>
-            <td>{this.props.feedback.comments}</td>
-            <td><button onClick={this.handleDelete}>Delete</button></td>
+                <td>{this.props.feedback.feeling}</td>
+                <td>{this.props.feedback.understanding} </td>
+                <td>{this.props.feedback.support}</td>
+                <td>{this.props.feedback.comments}</td>
+                <td><button onClick={this.handleDelete}>Delete</button></td>
             </tr>
-            </div>
+
         );
     }
 }
