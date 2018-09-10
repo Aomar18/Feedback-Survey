@@ -42,22 +42,30 @@ emptyInputs(){
 render() {
     return(
         <div>
+        <h1> How are you feeling ? </h1>
+
         <form className="FeelingSurvey">
+
         <input className='radio' onChange={this.handleChange}
                 checked="{this.state.feeling === 1}"
                 type="radio" value="1"/>
+
         <input className='radio' onChange={this.handleChange}
                 checked="{this.state.feeling === 2}"
                 type="radio" value="2"/>
+
         <input className='radio' onChange={this.handleChange}
                 checked="{this.state.feeling === 3}"
                 type="radio" value="3"/>
+
         <input className='radio' onChange={this.handleChange}
                 checked="{this.state.feeling === 4}"
                 type="radio" value="4"/>
+
         <input className='radio' onChange={this.handleChange}
                 checked="{this.state.feeling === 5}"
                 type="radio" value="5"/>
+                
         <input type="subumit" onClick={this.handleSubmit}>NEXT</input>
 
 

@@ -14,7 +14,14 @@ class App extends Component {
   
   render() {
     return (
-      
+      <Router>
+      <Route exact path="/" component={Feeling}/>
+      <Route path="comprehension" component={Comprehension}/>
+      <Route path="support" component={Support}/>
+      <Route path="comments" component={Comments}/>
+      <Route path="results" component={Results}/>
+      <Route path="admin" component={Admin}/>
+      </Router>
     );
   }
 }

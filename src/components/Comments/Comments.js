@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
 
-const feedback = {
-    comments:
+const emptyfeedback = {
+    comments:'',
 }
 
 
