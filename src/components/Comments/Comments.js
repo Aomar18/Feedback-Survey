@@ -14,7 +14,8 @@ class Comments extends Component {
 
 
         this.state = {
-            ...this.props.reduxState.updatedContent
+            ...this.props.reduxState.feedbackReducer,
+            comments: 'comment'
         }
 
     }
@@ -69,4 +70,8 @@ class Comments extends Component {
     }
 
 }
-export default Comments;
+
+const mapReduxStateToProps = (reduxState) => ({
+    reduxState
+});
+export default connect(mapReduxStateToProps)(Comments);

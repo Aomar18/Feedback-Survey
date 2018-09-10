@@ -33,6 +33,7 @@ const feedbackReducer = (state = defaultContent, action) => {
     else if (action.type === 'CLEAR_ALL'){
         return defaultContent;
     }
+    return state;
 }
 
 
