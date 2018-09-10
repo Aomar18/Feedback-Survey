@@ -17,18 +17,18 @@ const defaultContent = {
 //REDUCERS HERE
 
 const feedbackReducer = (state = defaultContent, action) => {
-    const updateContent = action.payload;
+    const updatedContent = action.payload;
     if (action.type === 'ADD_FEELING') {
-        return { ...state, feeling: updateContent.feeling }
+        return { ...state, feeling: updatedContent.feeling }
     }
     else if (action.type === 'ADD_UNDERSTANDING') {
-        return { ...state, understanding: updateContent.understanding }
+        return { ...state, understanding: updatedContent.understanding }
     }
     else if (action.type === 'ADD_SUPPORT') {
-        return { ...state, support: updateContent.support }
+        return { ...state, support: updatedContent.support }
     }
     else if (action.type === 'ADD_COMMENTS') {
-        return { ...state, comments: updateContent.comments }
+        return { ...state, comments: updatedContent.comments }
     }
     else if (action.type === 'CLEAR_ALL'){
         return defaultContent;
