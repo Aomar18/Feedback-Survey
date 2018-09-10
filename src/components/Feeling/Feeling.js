@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 
-const emptyfeedback = {
+const emptyFeedback = {
     feeling: '',
 }
 
@@ -11,7 +11,7 @@ class Feeling extends Component {
 constructor(){
 super();
 
-this.state = emptyfeedback;
+this.state = emptyFeedback;
 
 }
 

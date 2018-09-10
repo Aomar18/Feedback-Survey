@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 
-const emptyfeedback = {
+const emptyFeedback = {
     understanding: '',
 }
 
 class Understanding extends Component {
     constructor() {
         super();
+    
+    this.state = emptyFeedback;
 
     }
 
@@ -27,7 +29,9 @@ class Understanding extends Component {
         this.emptyInputs();
     }
 
-    emptyInputs()
+    emptyInputs(){
+        this.setState(emptyFeedback);
+    }
 
 
 

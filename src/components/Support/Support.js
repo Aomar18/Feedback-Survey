@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import connect from 'react-redux';
 
 
-const emptyfeedback = {
+const emptyFeedback = {
     support: ''
 }
 
@@ -10,7 +10,7 @@ const emptyfeedback = {
 class Support extends Component {
     constructor() {
         super();
-
+        this.state = emptyFeedback;
     }
 
     handleChange = (event) => {
