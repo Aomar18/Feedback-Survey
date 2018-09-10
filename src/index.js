@@ -15,13 +15,13 @@ const defaultContent = {
 }
 //REDUCERS HERE
 
-const feedbackReducer = ( state = defaultContent, action ) => {
-    const updateContent = action.payload;
-    if (action.type === 'ADD_FEELING'){
-        return(...state, feeling: updateContent.feeling)
+// const feedbackReducer = ( state = defaultContent, action ) => {
+//     const updateContent = action.payload;
+//     if (action.type === 'ADD_FEELING'){
+//         return(...state, feeling: updateContent.feeling)
 
-    }
-}
+//     }
+// }
 
 
 

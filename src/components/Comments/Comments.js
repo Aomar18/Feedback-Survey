@@ -8,7 +8,9 @@ const emptyfeedback = {
 
 
 class Comments extends Component {
-
+constructor(props){
+    super(props);
+}
 
 
 render(){

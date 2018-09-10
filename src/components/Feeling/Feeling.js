@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 
 const emptyfeedback = {
-    feeling: ''
+    feeling: '',
 }
 
 
@@ -23,11 +23,11 @@ handleChange = (event) => {
 }
 
 handleSubmit = (event) => {
-    event.preventDefault();
-
+event.preventDefault();
 const action = { type: 'ADD_FEELING' , payload: this.state}
 this.props.dispatch(action);
 this.props.history.push('feeling');
+this.emptyInputs();
 }
 
 emptyInputs(){
@@ -65,8 +65,8 @@ render() {
         <input className='radio' onChange={this.handleChange}
                 checked="{this.state.feeling === 5}"
                 type="radio" value="5"/>
-                
-        <input type="subumit" onClick={this.handleSubmit}>NEXT</input>
+
+        <input type="submit" onClick={this.handleSubmit}>NEXT</input>
 
 
 
