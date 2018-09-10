@@ -9,7 +9,7 @@ router.post('/', (req, res) => {
     const query = 
    `INSERT INTO "feedback" ("feeling", "understanding", "support", "comments")
     VALUES ($1, $2, $3, $4);`;
-    pool.query(query, [userInput[0], userInput[1], userInput[2], userInput[3]]).then((results) => {
+    pool.query(query, [userInput.feeling, userInput.understanding, userInput.support, userInput.comments]).then((results) => {
         console.log('Success in making POST');
         res.sendStatus(201);
     }).catch((error)=> {
@@ -23,7 +23,7 @@ router.get('/', (req, res) => {
     console.log('GET');
     const query = `SELECT * FROM "feedback";`;
     pool.query(query).then((result) => {
-        res.send(result);
+        res.send(result.rows);
     }).catch((error) => {
         console.log('Error in GET', error)
         res.sendStatus(500);

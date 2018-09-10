@@ -60,7 +60,7 @@ class Comments extends Component {
                 <h1>Any comments you want to leave? </h1>
                 <form>
                     <textarea rows="4" cols="50" onChange={this.handleChange} placeholder="Enter a comment about the survey here" />
-                    <br/>
+                    <br />
                     <button onClick={this.handleSubmit}>NEXT</button>
                 </form>
 

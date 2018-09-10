@@ -10,8 +10,8 @@ CREATE TABLE "feedback" (
   "support" INT not null,
   "comments" text,
   "flagged" boolean default false,
-  "date" date not null, 
-  -- CURRENT_DATE
+  "date" date not null
+  --  CURRENT_DATE
 ); 
 
 -- Sample feedback item
